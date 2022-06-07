@@ -1,11 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 /* text font & color scheme */
+a:link {
+  text-decoration: none;
+}
 
 /* page container */
+#page_container {
+  /* choose background color of whole page. */
+  background-color: rgb(95, 94, 94);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-/* landing container */
+/* nav bar */
+nav {
+  background-color: rgb(31, 30, 30);
+  padding: 25px;
+  color: white;
+  display: flex;
+}
 
-/* nav bar section */
+#logo {
+  flex: 1 1 20%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 ul {
   list-style: none;
+  flex: 1 1 80%;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
 }
+
+#links {
+  font-size: 15px;
+}
+
+/* landing container */
+#landing_container {
+  height: 70vh;
+  width: 60vw;
+  padding: 40px;
+  background-color: rgb(100, 97, 97);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about_hello {
+  font-size: 20px;
+}
+
+#about_name {
+  font-size: 80px;
+}
+
+#about_dev {
+  font-size: 80px;
+}
+
+#about_text {
+  font-size: 20px;
+}
+
 /* other container*/
+#other_container {
+  width: 50vw;
+  /* background-color: rgb(122, 118, 118); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* skills section */
+#skill_container {
+  margin: 10px;
+  /* padding: 10px; */
+  background-color: rgb(150, 143, 143);
+  height: 90vh;
+}
+
+/* projects section */
+#projects_container {
+  margin: 10px;
+  background-color: rgb(148, 140, 140);
+  height: 90vh;
+}
+
+/* contact section */
+#contact_container {
+  margin: 10px;
+  background-color: rgb(163, 154, 154);
+  height: 90vh;
+}
+
+/* footer */
+footer {
+  margin: 10px;
+  height: 7vh;
+}
