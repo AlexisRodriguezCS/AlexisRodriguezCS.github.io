@@ -24,11 +24,11 @@ nav {
   padding: 25px;
   color: white;
   display: flex;
+  align-items: center;
 }
 
 #logo {
   flex: 1 1 20%;
-  margin: 10px;
   display: flex;
   justify-content: center;
 }
@@ -39,17 +39,18 @@ ul {
   margin: 10px;
   display: flex;
   justify-content: space-evenly;
-  align-self: center;
 }
 
 #links {
   font-size: 15px;
+  color: white;
+  font-size: 18px;
 }
 
 /* landing container */
 #landing_container {
-  height: 70vh;
-  width: 60vw;
+  height: 110vh;
+  width: 80vw;
   padding: 40px;
   background-color: rgb(100, 97, 97);
   display: flex;
@@ -75,7 +76,7 @@ ul {
 
 /* other container*/
 #other_container {
-  width: 50vw;
+  width: 60vw;
   /* background-color: rgb(122, 118, 118); */
   display: flex;
   flex-direction: column;
@@ -95,17 +96,198 @@ ul {
   margin: 10px;
   background-color: rgb(148, 140, 140);
   height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#row_of_cards {
+  height: 40vh;
+  width: 100%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  /* justify-content: space-between; */
+}
+
+.card {
+  background-color: rgb(114, 56, 15);
+  height: 100%;
+  width: 33%;
+  border-radius: 15px;
+}
+
+.first,
+.fourth {
+  margin-right: 10px;
+}
+.sixth,
+.third {
+  margin-left: 10px;
+}
+
+.card-image {
+  /* background-color: rgb(58, 88, 223); */
+  height: 45%;
+  margin-bottom: 10px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+  background-image: url("images/test.PNG");
+}
+
+.card-2 {
+  background-image: url("images/test.PNG");
+}
+.card-3 {
+  background-image: url("images/test.PNG");
+}
+.card-4 {
+  background-image: url("images/test.PNG");
+}
+.card-5 {
+  background-image: url("images/test.PNG");
+}
+.card-6 {
+  background-image: url("images/test.PNG");
 }
 
 /* contact section */
 #contact_container {
   margin: 10px;
-  background-color: rgb(163, 154, 154);
+  /* background-color: rgb(163, 154, 154); */
   height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#info_container {
+  height: 80%;
+  width: 30%;
+  /* background-color: rgb(140, 154, 154); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+
+#info {
+  display: flex;
+}
+
+#info i,
+p {
+  padding: 5px;
+}
+
+#form_container {
+  height: 80%;
+  width: 65%;
+  /* border: 2px solid black;
+  border-radius: 10px; */
+  /* background-color: rgb(140, 154, 154); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#form_container textarea {
+  width: 100%;
+  resize: none;
+}
+
+#form_container form {
+  height: 80%;
+  width: 100%;
+  /* border: 2px solid black;
+  border-radius: 10px; */
+  /* background-color: rgb(100, 154, 154); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#form_container div,
+#form_container input {
+  width: 100%;
+}
+
+form div {
+  padding: 15px;
+}
+
+form label,
+#info,
+#form_container h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#form_container h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+form br {
+  margin: 10px;
+}
+
+#form_name,
+#form_email,
+#form_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#form_container input,
+textarea {
+  border: none;
+}
+
+#fullname,
+#email {
+  padding: 15px;
+}
+
+#message {
+  padding: 15px;
+  height: 150px;
+}
+
+#submit {
+  padding: 20px;
 }
 
 /* footer */
 footer {
-  margin: 10px;
-  height: 7vh;
+  width: 100%;
+  background-color: rgb(31, 30, 30);
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#copyright_text {
+  text-align: center;
+}
+
+#footer_icons i {
+  padding: 5px;
+}
+
+#footer_icons a:visited {
+  color: black;
+}
+#footer_icons a:hover {
+  color: white;
 }
