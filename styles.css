@@ -116,7 +116,7 @@ ul {
 .card {
   background-color: rgb(114, 56, 15);
   height: 100%;
-  width: 33%;
+  width: 33.33%;
   border-radius: 15px;
 }
 
@@ -132,7 +132,7 @@ ul {
 .card-image {
   /* background-color: rgb(58, 88, 223); */
   height: 45%;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   background-size: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -155,6 +155,28 @@ ul {
 }
 .card-6 {
   background-image: url("images/test.PNG");
+}
+
+.card a {
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  display: block;
+  margin: 0px 15px;
+}
+
+#languages {
+  display: flex;
+  justify-content: center;
+}
+
+#bottom_section_of_card {
+  height: 55%;
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* contact section */
