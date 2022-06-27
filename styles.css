@@ -109,22 +109,28 @@ ul {
   justify-content: space-evenly;
 }
 
-.cards {
+/* .cards {
   height: 80vh;
-  /* width: 100%; */
-  /* background-color: aquamarine; */
+  background-color: aquamarine; 
   display: flex;
-  /* flex-direction: column; */
   margin: -10px 0px;
   flex-wrap: wrap;
   flex-grow: 1;
   justify-content: space-between;
+} */
+
+.cards {
+  height: 80vh;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-gap: 10px;
 }
 
-.cards > * {
+/* .cards > * {
   flex: 0 0 32%;
   margin: 10px 0px;
-}
+} */
 
 /* #row_of_cards {
   height: 40vh;
