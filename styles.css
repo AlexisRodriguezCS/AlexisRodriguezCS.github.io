@@ -161,6 +161,12 @@ ul {
   box-shadow: 2px 2px 3px #242423;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  /* transform: scale(1.01); */
+  background-color: rgb(216, 216, 216);
+}
+
 .card-image {
   /* background-color: rgb(58, 88, 223); */
   height: 30%;
@@ -215,6 +221,11 @@ ul {
   border-radius: 30px;
   display: block;
   /* margin: 0px 25px; */
+}
+
+.card a:hover {
+  transform: scale(1.1);
+  background-color: #74c69d;
 }
 
 #languages {
