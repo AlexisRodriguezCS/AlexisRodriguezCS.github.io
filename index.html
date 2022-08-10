@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alexis Rodriguez</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ddf2e77f1b.js"
       crossorigin="anonymous"
@@ -15,252 +15,284 @@
     </style>
   </head>
   <body>
-    <header class="nav_header">
-      <!-- Nav bar -->
-      <nav class="nav">
-        <div id="logo">
-          <h1>A | R</h1>
-        </div>
-        <ul>
-          <li><a id="links" href="#landing_container">About</a></li>
-          <li><a id="links" href="#skill_container">Skills</a></li>
-          <li><a id="links" href="#projects_container">Projects</a></li>
-          <li><a id="links" href="#contact_container">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div id="page_container">
-      <!-- Landing section -->
-      <div id="landing_container">
-        <p id="about_hello">Hello , my name is</p>
-        <p id="about_name">Alexis Rodriguez.</p>
-        <p id="about_dev">Software Engineer</p>
-        <p id="about_text">
-          Repellat, tenetur! Aperiam repellat quibusdam necessitatibus
-          perspiciatis eum asperiores quia
-        </p>
-        <p id="about_text">
-          Repellat, tenetur! Aperiam repellat quibusdam necessitatibus
-          perspiciatis eum asperiores quia.
-        </p>
-        <p id="about_text">
-          Repellat, tenetur! Aperiam repellat quibusdam necessitatibus
-          perspiciatis eum asperiores quia
-        </p>
-        <a id="hire_button">Hire Me</a>
-      </div>
-      <div id="other_container">
-        <!-- Skills section -->
-        <div id="skill_container">
-          <p>My Skills</p>
-        </div>
-        <!-- Projects section -->
-        <section id="projects_container">
+    <div id="root">
+      <div id="app">
+        <div id="content">
           <header>
-            <h1 id="project_title">Projects</h1>
+            <!-- Nav bar -->
+            <nav class="nav">
+              <div id="nav_container">
+                <div id="logo">
+                  <h1>A | R</h1>
+                </div>
+                <div class="burger_container">
+                  <div id="burger">
+                    <div id="topbar"></div>
+                    <div id="btmbar"></div>
+                  </div>
+                </div>
+                <ul id="mobile_links">
+                  <div id="links_container">
+                    <li>
+                      <a id="links" href="#about">About</a>
+                    </li>
+                    <!-- <li><a id="links" href="#skill_container">Skills</a></li> -->
+                    <li>
+                      <a id="links" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                      <a id="links" href="#contact">Contact</a>
+                    </li>
+                    <div id="mobile_nav_icons">
+                      <a
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="https://github.com/Alexisrsz"
+                      >
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                      <a
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        href="https://www.linkedin.com/in/alexis-rodriguez-cs/"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </nav>
           </header>
-          <div class="cards">
-            <!-- <div id="row_of_cards"> row of cards 1-->
-            <article class="first card">
-              <div class="card-image card-1"></div>
-              <section id="bottom_section_of_card">
-                <h1 id="card_title">Random Quote Generator</h1>
-                <p id="card_type">Web App</p>
-                <div id="languages">
-                  <p>React</p>
-                  <p>HTML5 / CSS</p>
-                </div>
-                <a
-                  href="https://codepen.io/AlexisRodriguez/pen/VwegEMX"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  >View on Codepen</a
-                >
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <!-- About section -->
+          <div id="about">
+            <div id="about_container">
+              <section id="about_section">
+                <p id="about_hello">Hello, I'm</p>
+                <p id="about_name">Alexis Rodriguez</p>
+                <p id="about_dev">Software Engineer</p>
+                <p id="about_text">
+                  Repellat, tenetur! Aperiam repellat quibusdam necessitatibus
+                  perspiciatis eum asperiores quia Repellat, tenetur! Aperiam
+                  repellat quibusdam necessitatibus perspiciatis eum asperiores
+                  quia.
                 </p>
+                <a id="about_button" href="#projects">View My Projects</a>
               </section>
-            </article>
-            <article class="second card">
-              <div class="card-image card-2"></div>
-              <section id="bottom_section_of_card">
-                <h1 id="card_title">Second Project</h1>
-                <p id="card_type">Mobile App</p>
-                <div id="languages">
-                  <p>Flutter</p>
-                  <p>Styled Widgets</p>
+              <aside id="side">
+                <div id="side-img"></div>
+              </aside>
+            </div>
+          </div>
+          <!-- Project section -->
+          <div id="projects">
+            <h1 id="contact_header">My Projects</h1>
+            <section id="project_section">
+              <div class="project_card">
+                <div class="card_top_container">
+                  <div class="tag" id="front_end_tag">
+                    <i class="fa fa-circle"></i>
+                    <p class="card_type">Front-End</p>
+                  </div>
+                  <div id="card_languages">
+                    <p>React, HTML, CSS</p>
+                  </div>
                 </div>
-                <a href="#">View on Github</a>
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </section>
-            </article>
-            <article class="third card">
-              <div class="card-image card-3"></div>
-              <section id="bottom_section_of_card">
-                <h1 id="card_title">Third Project</h1>
-                <p id="card_type">Software App</p>
-                <div id="languages">
-                  <p>C++</p>
-                </div>
-                <a href="#">View on Github</a>
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </section>
-            </article>
-            <!-- </div> row of cards 1-->
-            <!-- <div id="row_of_cards"> row of cards 2 -->
-            <article class="fourth card">
-              <div class="card-image card-4"></div>
-              <section id="bottom_section_of_card">
                 <h1 id="card_title">Markdown Previewer</h1>
-                <p id="card_type">Web App</p>
-                <div id="languages">
-                  <p>React</p>
-                  <p>HTML5 / CSS</p>
+                <p id="card_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Feugiat sed lectus vestibulum mattis ullamcorper velit sed
+                  ullamcorper morbi.
+                </p>
+                <div class="card_bottom_container">
+                  <div class="card_links_container">
+                    <p class="card_link_title">Live Demo</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-codepen card_link"></i>
+                    </a>
+                  </div>
+                  <div class="card_links_container">
+                    <p class="card_link_title">Github</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-github card_link"></i>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="project_card">
+                <div class="card_top_container">
+                  <div class="tag" id="mobile_app_tag">
+                    <i class="fa fa-circle"></i>
+                    <p class="card_type">Mobile App</p>
+                  </div>
+                  <div id="card_languages">
+                    <p>Flutter</p>
+                  </div>
+                </div>
+                <h1 id="card_title">Markdown Previewer</h1>
+                <p id="card_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Feugiat sed lectus vestibulum mattis ullamcorper velit sed
+                  ullamcorper morbi.
+                </p>
+                <div class="card_bottom_container">
+                  <div class="card_links_container">
+                    <p class="card_link_title">Live Demo</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-codepen card_link"></i>
+                    </a>
+                  </div>
+                  <div class="card_links_container">
+                    <p class="card_link_title">Github</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-github card_link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project_card">
+                <div class="card_top_container">
+                  <div class="tag" id="software_tag">
+                    <i class="fa fa-circle"></i>
+                    <p class="card_type">Software</p>
+                  </div>
+                  <div id="card_languages">
+                    <p>C++</p>
+                  </div>
+                </div>
+                <h1 id="card_title">Markdown Previewer</h1>
+                <p id="card_description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Feugiat sed lectus vestibulum mattis ullamcorper velit sed
+                  ullamcorper morbi.
+                </p>
+                <div class="card_bottom_container">
+                  <div class="card_links_container">
+                    <p class="card_link_title">Live Demo</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-codepen card_link"></i>
+                    </a>
+                  </div>
+                  <div class="card_links_container">
+                    <p class="card_link_title">Github</p>
+                    <a
+                      href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <i class="fa-brands fa-github card_link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project_card"></div>
+              <div class="project_card"></div>
+              <div class="project_card"></div>
+            </section>
+          </div>
+          <!-- Contact section -->
+          <div id="contact">
+            <section id="form_section">
+              <h1 id="contact_header">Let's get in touch</h1>
+              <form
+                action="https://formspree.io/f/mqknjdjo"
+                method="POST"
+                accept-charset="utf-8"
+              >
+                <div id="form_name">
+                  <label for="fullname">Name</label>
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Alexis Rodriguez"
+                    required=""
+                  />
+                </div>
+                <div id="form_email">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@domain.com"
+                    required=""
+                  />
+                </div>
+                <div id="form_message">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Your message here"
+                    required=""
+                  ></textarea>
+                </div>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Submission"
+                />
+                <div id="form_submit">
+                  <input type="submit" value="Send Message" id="submit" />
+                </div>
+              </form>
+            </section>
+          </div>
+          <!-- Footer section -->
+          <footer>
+            <section id="footer_section">
+              <div id="footer_logo">
+                <h1>A | R</h1>
+              </div>
+              <div id="footer_copyright">
+                <p id="copyright_text">© Copyright 2022</p>
+                <p>Designed & Built by Alexis Rodriguez</p>
+              </div>
+              <div id="footer_icons">
                 <a
-                  href="https://codepen.io/AlexisRodriguez/pen/abNOLLw"
+                  href="https://github.com/Alexisrsz"
                   target="_blank"
                   rel="noreferrer noopener"
-                  >View on Codepen</a
                 >
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </section>
-            </article>
-            <article class="fifth card">
-              <div class="card-image card-5"></div>
-              <section id="bottom_section_of_card">
-                <h1 id="card_title">Fifth Project</h1>
-                <p id="card_type">Mobile App</p>
-                <div id="languages">
-                  <p>Flutter</p>
-                  <p>Styled Widgets</p>
-                </div>
-                <a href="#">View on Github</a>
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </section>
-            </article>
-            <article class="sixth card">
-              <div class="card-image card-6"></div>
-              <section id="bottom_section_of_card">
-                <h1 id="card_title">Sixth Project</h1>
-                <p id="card_type">Software App</p>
-                <div id="languages">
-                  <p>C++</p>
-                </div>
-                <a href="#">View on Github</a>
-                <p id="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-              </section>
-            </article>
-            <!-- </div> row of cards 2-->
-          </div>
-          <!-- test -->
-        </section>
-        <!-- Contact section -->
-        <div id="contact_container">
-          <div id="info_container">
-            <div id="info">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>Cicero, Illinois</p>
-            </div>
-            <div id="info">
-              <i class="fa-solid fa-envelope"></i>
-              <p>alexisrodriguezdev@gmail.com</p>
-            </div>
-            <div id="info">
-              <i class="fa-brands fa-github"></i>
-              <p>Github</p>
-            </div>
-            <div id="info">
-              <i class="fa-brands fa-linkedin"></i>
-              <p>Linkedln</p>
-            </div>
-          </div>
-          <div id="form_container">
-            <h2>CONTACT ME</h2>
-            <h1>Let's get in touch</h1>
-            <form
-              action="https://formspree.io/f/mqknjdjo"
-              method="POST"
-              accept-charset="utf-8"
-            >
-              <div id="form_name">
-                <label for="fullname">Name</label><br />
-                <input
-                  type="text"
-                  id="fullname"
-                  name="fullname"
-                  placeholder="Name"
-                  required=""
-                />
+                  <i class="fa-brands fa-github text-dark fa-2x"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/alexis-rodriguez-363547201/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
               </div>
-              <div id="form_email">
-                <label for="email">Email</label><br />
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  required=""
-                />
-              </div>
-              <div id="form_message">
-                <label for="message">Message</label><br />
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Message"
-                  required=""
-                ></textarea>
-              </div>
-              <input
-                type="hidden"
-                name="_subject"
-                id="email-subject"
-                value="Contact Form Submission"
-              />
-              <div id="form_submit">
-                <input type="submit" value="Send message" id="submit" />
-              </div>
-            </form>
-          </div>
+            </section>
+          </footer>
         </div>
       </div>
-      <!-- Footer section -->
-      <footer>
-        <div id="footer_logo">
-          <h1>A | R</h1>
-        </div>
-        <div id="footer_copyright">
-          <p id="copyright_text">© Copyright 2022</p>
-          <p>Designed & Built by Alexis Rodriguez</p>
-        </div>
-        <div id="footer_icons">
-          <a
-            href="https://github.com/Alexisrsz"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <i class="fa-brands fa-github text-dark fa-2x"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/alexis-rodriguez-363547201/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <i class="fa-brands fa-linkedin fa-2x"></i>
-          </a>
-        </div>
-      </footer>
     </div>
     <script src="script.js"></script>
   </body>
