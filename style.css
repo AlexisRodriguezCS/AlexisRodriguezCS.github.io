@@ -253,10 +253,6 @@ ul {
   height: 365px;
   border: 2px solid #242423;
   background-color: white;
-  /* box-shadow: 17px 17px #ff0063, 17px 17px 0 3px #242423; */
-  /* border-radius: 12px; */
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 8px 8px #242423;
   color: black;
   text-align: left;
