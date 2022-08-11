@@ -237,6 +237,17 @@ ul {
   /* margin: 2% 0%; */
 }
 
+#project_header {
+  display: inline-block;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: 900;
+  width: 100%;
+  font-size: 46px;
+  /* background-color: #74c69d; */
+  margin-top: 2%;
+}
+
 #project_section {
   min-height: 100%;
   margin: 0% auto;
@@ -245,12 +256,13 @@ ul {
   /* background-color: #74c69d; */
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  margin: 2% 0%;
+  /* margin: 1% 0%; */
+  margin-top: 1%;
 }
 
 .project_card {
   z-index: 3;
-  height: 365px;
+  height: 360px;
   border: 2px solid #242423;
   background-color: white;
   box-shadow: 8px 8px #242423;
@@ -281,8 +293,6 @@ ul {
 .tag {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 35%;
   padding: 5px 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 7px black;
@@ -305,9 +315,10 @@ ul {
   font-size: 18px;
 }
 
-/* .tag i {
-  font-size: 6px;
-} */
+.tag i {
+  font-size: 8px;
+  padding-right: 10px;
+}
 
 #card_languages {
   font-size: 18px;
@@ -354,11 +365,11 @@ ul {
 /* Form section */
 #form_section {
   /* background-color: #eaf6f6; */
-  min-height: 88vh;
+  min-height: 95vh;
   width: inherit;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -370,7 +381,7 @@ ul {
   width: 100%;
   font-size: 46px;
   /* background-color: #74c69d; */
-  margin-top: 1%;
+  /* margin-top: 1%; */
 }
 
 form {
@@ -383,9 +394,9 @@ form {
   /* justify-content: space-evenly; */
   justify-content: center;
   align-items: center;
-  border: 3px solid #242423;
-  box-shadow: 25px 25px #ff0063, 25px 25px 0 3px #242423;
-  margin: 2% 0%;
+  border: 2px solid #242423;
+  box-shadow: 20px 20px #ff0063, 20px 20px 0 3px #242423;
+  margin-bottom: 1%;
 }
 
 /* Div the holds both label and input */
@@ -402,43 +413,43 @@ form textarea {
 /* Placeholders */
 form input,
 #message {
-  padding: 15px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 15px;
 }
 
 /* Name, Email, Message */
 form label {
   display: block;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 #fullname,
 #email {
   outline: none;
   border: 0;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
 }
 
 #fullname:focus,
 #email:focus {
-  border-bottom: 4px solid #66bfbf;
+  border-bottom: 3px solid #66bfbf;
 }
 
 /* Textarea */
 #message {
   resize: none;
   padding: 15px;
-  height: 200px;
-  border: 2px solid #242423;
+  height: 160px;
+  border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
 }
 
 #message:focus {
   outline: none;
-  border: 3px solid #66bfbf;
+  border: 2px solid #66bfbf;
 }
 
 /* Submit button */
@@ -446,10 +457,10 @@ form label {
   /* background-color: #ff0063; */
   /* color: white; */
   letter-spacing: 2px;
-  font-size: 23px;
-  padding: 20px;
+  font-size: 18px;
+  padding: 15px;
   font-weight: bold;
-  border: 2px solid #242423;
+  border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
   transition: 0.2s ease-in-out;
 }
@@ -481,13 +492,21 @@ footer {
   border-top-right-radius: 12px; */
 }
 
+#footer_logo {
+  font-size: 13px;
+}
+
+#footer_copyright {
+  font-size: 13px;
+}
+
 #copyright_text {
   text-align: center;
 }
 
 /*  Github and Linkedin Icons */
 #footer_icons i {
-  font-size: 40px;
+  font-size: 30px;
   padding: 5px;
 }
 
