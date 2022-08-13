@@ -320,16 +320,16 @@ ul {
   padding-right: 10px;
 }
 
-#card_languages {
+.card_languages {
   font-size: 18px;
 }
 
-#card_title {
+.card_title {
   letter-spacing: 2px;
   font-size: 27px;
 }
 
-#card_description {
+.card_description {
   font-size: 16px;
   text-align: justify;
 }
@@ -365,7 +365,7 @@ ul {
 /* Form section */
 #form_section {
   /* background-color: #eaf6f6; */
-  min-height: 95vh;
+  min-height: 94vh;
   width: inherit;
   display: flex;
   flex-direction: column;
@@ -522,7 +522,8 @@ footer {
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
 */
-@media screen and (min-width: 1101px) and (max-width: 1366px) {
+/* @media screen and (min-width: 1200px) and (max-width: 1600px) { */
+@media screen and (max-width: 1600px) {
   /* Nav */
   /* About */
   #about {
@@ -551,21 +552,20 @@ footer {
   }
 
   /* Project */
+  #project_section {
+    grid-template-columns: repeat(2, auto);
+  }
   /* Form */
+  form {
+    width: 65%;
+  }
   /* Footer */
 }
 
-/* Tablet */
+/* Tablets, iPads */
 /* @media screen and (min-width: 767px) and (max-width: 1100px) { */
 @media screen and (max-width: 1100px) {
   /* Nav bar */
-  nav {
-    box-shadow: none;
-    background-color: rgb(234, 246, 246, 0.8);
-    /* border-bottom: 2px solid black; */
-    box-shadow: rgb(24 26 27 / 20%) 0px 5px 10px;
-  }
-
   nav,
   #navbar {
     display: block;
@@ -584,9 +584,6 @@ footer {
   /* Burger icon */
   .burger_container {
     display: relative;
-    /* height: 8vh; */
-    /* width: 10vw; */
-    /* background-color: #02ff85 !important; */
   }
 
   #burger {
@@ -620,13 +617,11 @@ footer {
   }
 
   /* Animation that makes the hamburger into X */
-  /* #topbar.active,
+  #topbar.active,
   #btmbar.active {
     background-color: #000000 !important;
     transition: 0.6s;
     height: 3px;
-    -webkit-animation: pulsate 2.5s ease-out;
-    -webkit-animation-iteration-count: infinite;
     opacity: 0.3;
   }
   #topbar.active {
@@ -637,19 +632,7 @@ footer {
     transform: rotateZ(-45deg) translateX(4px) translateY(-4px);
     margin-left: 0px;
     width: 100%;
-  } */
-
-  /* @-webkit-keyframes pulsate {
-    0% {
-      opacity: 0.3;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.3;
-    }
-  } */
+  }
 
   /*  Menu the pops out when hamburger gets clicked */
   .mobile_nav {
@@ -790,17 +773,50 @@ footer {
   }
 
   /* Project */
+  #projects {
+    margin-bottom: 8vh;
+  }
+
   #project_section {
+    grid-template-columns: 1fr;
+  }
+
+  .card_title {
+    font-size: 30px;
+  }
+
+  .card_type,
+  .card_link_title,
+  .card_languages {
+    font-size: 20px;
+  }
+
+  .card_description {
+    font-size: 18px;
+  }
+
+  .card_link {
+    font-size: 38px;
   }
 
   /* Contant */
-  #contact_section {
+  #contact {
+    min-height: 87vh;
+  }
+
+  #form_section {
+    min-height: 87vh;
+  }
+
+  form {
+    width: 80%;
+    min-height: 70vh;
   }
 
   /* Footer */
 }
 
-/* Mobile normal*/
+/* Tablet */
 @media screen and (max-width: 767px) {
   /*  Menu the pops out when hamburger gets clicked */
   #links {
@@ -833,8 +849,8 @@ footer {
   }
 }
 
-/* Mobile small*/
-@media screen and (max-width: 600px) {
+/* Mobile */
+@media screen and (max-width: 550px) {
   /* Hamburger Container */
   #burger {
     right: 5vw;
@@ -859,16 +875,6 @@ footer {
   }
 
   /* About */
-  /* #about {
-    width: 100vw;
-    border-top: 2px solid #242423;
-  } */
-
-  #about_section {
-    /* background-color: #ffffff !important; */
-    padding: 0% 5%;
-  }
-
   #about_hello {
     font-size: 20px;
     padding: 5% 5%;
@@ -896,31 +902,69 @@ footer {
   }
 
   /* Project */
-  #project_section {
+  .card_title {
+    font-size: 25px;
+  }
+
+  .card_type,
+  .card_link_title,
+  .card_languages {
+    font-size: 18px;
+  }
+
+  .card_description {
+    font-size: 15px;
+  }
+
+  .card_link {
+    font-size: 30px;
   }
 
   /* Contant */
-  #contact_section {
+  #contact {
+    min-height: 85vh;
+  }
+
+  #form_section {
+    min-height: 85vh;
+  }
+
+  form {
+    padding: 10px 0px;
+    min-height: 60vh;
+  }
+
+  form input,
+  #message {
+    font-size: 14px;
+  }
+
+  form label {
+    font-size: 16px;
+  }
+
+  #message {
+    height: 140px;
+  }
+
+  #submit {
+    font-size: 16px;
+    padding: 10px 15px;
   }
 
   /* Footer */
   footer {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; */
     display: block;
     /* background-color: #ff0063; */
-    min-height: 15vh;
+    min-height: 8vh;
     text-align: center;
-    /* padding: 3% 0%; */
+    margin-top: 3%;
   }
 
   #footer_section {
     display: flex;
-    min-height: 15vh;
+    min-height: 8vh;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
   }
 
@@ -933,25 +977,79 @@ footer {
     width: 100%;
     justify-content: space-evenly;
     /* background-color: #66bfbf; */
+    padding: 10px 0px;
   }
 
   #footer_icons i {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 460px) {
+  /* Project */
+  .card_title {
+    font-size: 20px;
+  }
+
+  .card_type,
+  .card_link_title,
+  .card_languages {
+    font-size: 15px;
+  }
+
+  .card_description {
+    font-size: 14px;
+  }
+
+  .card_link {
+    font-size: 25px;
+  }
+
+  #contact_header,
+  #project_header {
     font-size: 35px;
   }
 
-  /* Space between Copyright & Icons */
-  /* #footer_copyright,
-  #footer_icons {
-    padding: 2% 0%;
-  } */
-
-  /* Space between Icons */
-  /* #footer_icons a {
-    padding: 0% 10%;
-  } */
+  form {
+    box-shadow: 15px 15px #ff0063, 15px 15px 0 3px #242423;
+  }
 }
 
-/* Mobile xtra-small*/
+/* Mobile */
+@media screen and (max-width: 380px) {
+  /* Project */
+  .card_top_container {
+    height: 60px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card_type,
+  .card_link_title,
+  .card_languages {
+    font-size: 15px;
+  }
+
+  .card_description {
+    font-size: 14px;
+  }
+
+  .card_link {
+    font-size: 25px;
+  }
+
+  /*Contact*/
+  form {
+    box-shadow: 10px 10px #ff0063, 10px 10px 0 3px #242423;
+  }
+
+  form div {
+    width: 80%;
+  }
+}
+
+/* Mobile small */
 @media screen and (max-width: 300px) {
   /*  About, Project, Contant Links */
   #links {
@@ -989,6 +1087,43 @@ footer {
   #about_button {
     padding: 10px;
     font-size: 16px;
+  }
+
+  /* Project */
+  .card_title {
+    font-size: 18px;
+  }
+
+  .card_type,
+  .card_link_title,
+  .card_languages {
+    font-size: 14px;
+  }
+
+  .card_description {
+    font-size: 12px;
+  }
+
+  .card_link {
+    font-size: 25px;
+  }
+  /* Form */
+  form input,
+  #message {
+    font-size: 12px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  #message {
+    height: 80px;
+  }
+
+  #submit {
+    font-size: 14px;
+    padding: 5px 15px;
   }
 }
 
