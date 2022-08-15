@@ -16,6 +16,10 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: black;
+}
+
 /* Buttons/Links shared style*/
 #links,
 #about_text,
@@ -510,10 +514,6 @@ footer {
   padding: 5px;
 }
 
-#footer_icons a:visited {
-  color: black;
-}
-
 #footer_icons a:hover {
   color: white;
 }
@@ -552,10 +552,19 @@ footer {
   }
 
   /* Project */
+  #projects {
+    margin: 1% 0%;
+  }
+
   #project_section {
     grid-template-columns: repeat(2, auto);
   }
-  /* Form */
+
+  /* Contact */
+  #contact {
+    margin: 1% 0%;
+  }
+
   form {
     width: 65%;
   }
@@ -730,7 +739,7 @@ footer {
     width: 100%;
     /* margin-top: 0vh; */
     /* text-align: center; */
-    min-height: 92vh;
+    min-height: 93vh;
     /* background-color: rgb(44, 5, 18); */
     padding: 0% 10%;
     margin: 0;
