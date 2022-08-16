@@ -417,6 +417,8 @@ form input,
 form textarea {
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Placeholders */
@@ -474,6 +476,8 @@ form label {
   box-shadow: 6px 4px #242423;
   transition: 0.2s ease-in-out;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #submit:hover {
@@ -517,6 +521,9 @@ footer {
 
 /*  Github and Linkedin Icons */
 #footer_icons i {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 30px;
   padding: 5px;
 }
