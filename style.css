@@ -202,7 +202,6 @@ ul {
   background-color: #ff0063;
   padding: 15px 0px;
   transition: 0.2s ease-in-out;
-  -webkit-appearance: none;
 }
 
 #about a:hover {
@@ -414,6 +413,7 @@ form div {
 form input,
 form textarea {
   width: 100%;
+  -webkit-appearance: none;
 }
 
 /* Placeholders */
@@ -451,6 +451,7 @@ form label {
   height: 160px;
   border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
+  -webkit-appearance: none;
 }
 
 #message:focus {
@@ -469,6 +470,7 @@ form label {
   border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
   transition: 0.2s ease-in-out;
+  -webkit-appearance: none;
 }
 
 #submit:hover {
