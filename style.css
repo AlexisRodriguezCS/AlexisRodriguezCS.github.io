@@ -426,6 +426,9 @@ form input,
 #message {
   padding: 10px;
   font-size: 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Name, Email, Message */
@@ -457,6 +460,8 @@ form label {
   border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #message:focus {
