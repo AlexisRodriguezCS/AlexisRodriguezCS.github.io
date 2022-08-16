@@ -5,17 +5,16 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 textarea,
 input[type="text"],
 input[type="button"],
 input[type="email"],
-input[type="submit"] {
+input[type="submit"],
+i {
   -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 0;
 }
 
@@ -26,7 +25,6 @@ div {
 /* text font & color scheme */
 a:link {
   text-decoration: none;
-  -webkit-appearance: none;
 }
 
 a:visited {
@@ -414,9 +412,6 @@ form {
   border: 2px solid #242423;
   box-shadow: 20px 20px #ff0063, 20px 20px 0 3px #242423;
   margin-bottom: 1%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* Div the holds both label and input */
@@ -428,9 +423,6 @@ form div {
 form input,
 form textarea {
   width: 100%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* Placeholders */
@@ -438,9 +430,6 @@ form input,
 #message {
   padding: 10px;
   font-size: 15px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 /* Name, Email, Message */
@@ -471,9 +460,6 @@ form label {
   height: 160px;
   border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 #message:focus {
@@ -492,9 +478,6 @@ form label {
   border: 1px solid #242423;
   box-shadow: 6px 4px #242423;
   transition: 0.2s ease-in-out;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 #submit:hover {
@@ -538,8 +521,6 @@ footer {
 
 /*  Github and Linkedin Icons */
 #footer_icons i {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   font-size: 30px;
   padding: 5px;
