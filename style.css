@@ -12,13 +12,15 @@ input[type="text"],
 input[type="button"],
 input[type="email"],
 input[type="submit"],
-i {
+i,
+a {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
 }
 
-i {
+i:visited,
+a:visited {
   color: #000;
 }
 
