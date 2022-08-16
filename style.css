@@ -478,7 +478,7 @@ form label {
 
 /* Submit button */
 #submit {
-  /* background-color: #ff0063; */
+  background-color: white;
   /* color: white; */
   letter-spacing: 2px;
   font-size: 18px;
