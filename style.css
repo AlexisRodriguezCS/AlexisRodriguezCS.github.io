@@ -10,6 +10,10 @@
   appearance: none;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 div {
   display: block;
 }
