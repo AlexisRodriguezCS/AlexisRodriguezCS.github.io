@@ -14,6 +14,7 @@ div {
 /* text font & color scheme */
 a:link {
   text-decoration: none;
+  -webkit-appearance: none;
 }
 
 a:visited {
@@ -201,6 +202,7 @@ ul {
   background-color: #ff0063;
   padding: 15px 0px;
   transition: 0.2s ease-in-out;
+  -webkit-appearance: none;
 }
 
 #about a:hover {
