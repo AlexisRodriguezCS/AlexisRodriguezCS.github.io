@@ -479,6 +479,7 @@ form label {
 /* Submit button */
 #submit {
   background-color: white;
+  color: #000;
   /* color: white; */
   letter-spacing: 2px;
   font-size: 18px;
@@ -530,6 +531,7 @@ footer {
 
 /*  Github and Linkedin Icons */
 #footer_icons i {
+  color: #000;
   appearance: none;
   font-size: 30px;
   padding: 5px;
