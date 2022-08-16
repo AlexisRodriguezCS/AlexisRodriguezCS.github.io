@@ -19,13 +19,11 @@ a {
   border-radius: 0;
 }
 
-i,
-a {
+i {
   color: #000;
 }
 
-i:visited,
-a:visited {
+i:visited {
   color: #000;
 }
 
