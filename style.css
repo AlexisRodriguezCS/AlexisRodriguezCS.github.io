@@ -409,6 +409,9 @@ form {
   border: 2px solid #242423;
   box-shadow: 20px 20px #ff0063, 20px 20px 0 3px #242423;
   margin-bottom: 1%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 /* Div the holds both label and input */
