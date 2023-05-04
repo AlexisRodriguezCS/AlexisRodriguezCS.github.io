@@ -1,2 +1,2 @@
 # Work In Progress.  
-[Personal Portfolio](https://AlexisRodriguezCS.github.io/)
+[Personal Portfolio](https://alexisrodriguezcs.github.io/)
